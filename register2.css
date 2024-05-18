@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+
+
+.body{
+    font-family: 'Poppins', sans-serif;
+    /* background: #a9efc8; */
+    background-image: url(./images/home6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+
+
+
+
+.input.form-control.bg-light {
+    background-color: #fff;
+}
+
+/*------------ Login container ------------*/
+
+.box-area{
+    width: 700px;
+}
+
+/*------------ Right box ------------*/
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+/*------------ Custom Placeholder ------------*/
+
+::placeholder{
+    font-size: 16px;
+}
+
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    color: #000;
+}
+
+.navbar-brand:hover {
+    color: #000; /* Change hover color as needed */
+    text-decoration: none;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+/* left container stepwise margin */
+.box{
+    margin-top: 8rem;
+}
+
+/* .box-area{
+    margin-top
+} */
+
+
+
+/* Custom styling for Select2 */
+.select2-container {
+    width: 10% !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 2.375rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    width:73%!important;
+}
+
+.select2-container .select2-selection__arrow {
+    height: 38px;
+}
+
+.select2-container .select2-selection__rendered {
+    line-height: 38px;
+    padding-left: 0px;
+    color: #28d478;
+}
+
+.select2-results__option {
+    padding: 0px;
+}
+
+.select2-container--default .select2-results__option--highlighted {
+    background-color: #28d478 !important;
+    color: #000000;
+}
+
+.select2-container--default .select2-results__option:hover {
+    background-color: #0a6032;
+    color: #000000;
+}
+
+/* Remove border from Select2 search box */
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: none !important;
+    box-shadow: none !important;
+    width:4vw !important;
+}
+.select2-container--default .select2-results>.select2-results__options {
+    max-height: 200px!important;
+    overflow-y: auto!important;
+    width: 4vw!important;
+    background: white!important;
+}
+
+.select2-container .select2-selection--single {
+    height: 2.375rem!important;
+    border: 1px solid #ced4da!important;
+    border-radius: 4px!important;
+    background-color: whitesmoke!important;
+    width: 15vw!important;
+    margin-left: -15px!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px!important;
+    position: absolute!important;
+    top: 1px!important;
+    right: -4px!important;
+    width: 20px!important;
+}
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: 15px!important;
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+}
+
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+     .box-area{
+        margin: 0 10px;
+        height: auto;
+        width: auto;
+
+     }
+
+     .box{
+        height: auto;
+        width: auto;
+
+     }
+     .left-box{
+        height: auto;
+        overflow: overlay;
+     }
+     .right-box{
+        padding: 20px;
+     }
+
+     body{
+        overflow: overlay;
+     }
+
+    
+}
+
+
+/* Mobile screens (up to 576px) */
+@media (max-width: 576px) {
+    /* Styles for screens up to 576px wide (e.g., smartphones) */
+    /* Adjust as needed */
+  }
+  
+  /* Tablet screens (577px to 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    /* Styles for screens between 577px and 768px wide (e.g., tablets) */
+    /* Adjust as needed */
+  }
+
+
+
+/* Laptop screens (769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    /* Styles for screens between 769px and 992px wide (e.g., laptops) */
+    /* Adjust as needed */
+    body{
+        overflow: overlay;
+    }
+  }
+  
+  /* Desktop screens (993px and wider) */
+  @media (min-width: 993px) {
+    /* Styles for screens 993px and wider (e.g., desktops) */
+    /* Adjust as needed */
+    body{
+        overflow: overlay;
+    }
+  }

@@ -1,0 +1,165 @@
+.profile-circle {
+    display: flex;
+    align-items: center;
+    /* width: auto; */
+  }
+  
+  .profile-image {
+      width: 50px;
+      height: 50px;
+      background-color: #23d375;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px; 
+      border: 2px solid green;
+
+  }
+
+
+
+
+main {
+display: flex;
+width: 100%;
+/* height: 100vh;  100% of the viewport height */
+background-color: whitesmoke;
+
+}
+.left-div {
+/* background-color: whitesmoke; */
+width: 30%;
+border-radius: 10px;
+}
+.white-bg {
+background-color: white;
+padding: 20px;
+margin:20px;
+border-radius: 10px;
+}
+.whitesmoke-bg {
+background-color: whitesmoke;
+padding: 30px;
+height:auto;
+
+}
+.right-div {
+background-color: white;
+border-radius: 10px;
+padding:20px;
+margin:20px;
+height:100%;
+width:75vw;
+}
+
+       
+.filter-checkboxes {
+    display: none; /* Hide the checkboxes by default */
+    margin-right:5px!important;
+}
+
+.filter-header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width:100px;
+    /* justify-content: space-between; */
+    border-radius:5px;
+    padding: 5px; /* Add padding for spacing */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border:2px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-header:hover {
+    
+    background-color: #23D375FF; /* Change background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*
+}
+
+.arrow-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    transition: transform 0.3s ease; /* Add transition for smooth rotation */
+}
+
+.collapsed .arrow-icon {
+    transform: rotate(90deg); /* Rotate arrow when collapsed */
+}
+
+  
+
+@media (max-width: 768px) {
+    main{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
+    .right-div{
+        width: calc(100vw - 35px);
+    }
+    
+    .white-bg {
+        display:flex;
+        flex-direction:row;
+        width: calc(100vw - 37px);
+        overflow-x: hidden;
+        margin:0;
+        padding-top: 20px; /* Adjust top padding as needed */
+    padding-bottom: 20px; /* Adjust bottom padding as needed */
+    padding-left: 20px; /* No left padding */
+    padding-right: 20px;
+    }
+    .whitesmoke-bg {
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        padding-top: 10px; /* Adjust top padding as needed */
+        padding-bottom: 10px; /* Adjust bottom padding as needed */
+        padding-left: 10px; /* No left padding */
+        padding-right: 0;
+
+    }
+    .filter-checkbox {
+        /* font-size:5vw; */
+    }
+    .s-label , .v-label{
+        font-size:2vw;
+    }
+    .input-label {
+        font-size:1.8vw;
+    }
+    .filter-header , .arrow-icon {
+        font-size:2vw;
+        height:3vh;
+        width:5rem;
+    }
+    .description {
+        font-size:2rem;
+    }
+    .left-div {
+        padding-left:20px;
+    }
+    .checkbox-input[type="checkbox"]{
+        transform: scale(0.6);
+    }
+    .checkbox-container {
+        display: flex; /* Use flexbox to align items */
+        align-items: center; /* Align items vertically */
+      }
+      label{
+        margin-bottom:0;
+      }
+    .two-sections{
+        display:flex;
+        flex-direction:row;
+        gap:6rem;
+    }
+    
+    
+
+}

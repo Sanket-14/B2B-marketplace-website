@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+     /* background-image: url("B2B_bg.jpg");  */
+     background-size: cover ;
+    background-color:whitesmoke;
+    background-size: cover; 
+    color: #333;
+    /* max-width:3000px; */
+ }
+
+ .navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    background-color: #2F4F4F; /* Updated background color for the navbar */
+    color: #D3D3D3; /* Updated text color for the navbar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%; /* Set the width to 100% */
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
+    /* height: 500px; */
+ }
+
+ .nav__logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from the brand */
+    color: #141E12; /* Adjust color for the brand */
+    margin-bottom: 15px;
+ }
+
+ .white-text {
+    color: white;
+    position: absolute;
+    left: 80px;
+    bottom: 40px;
+}
+
+.green-text {
+    color: #00FF7F;
+    margin-top: 15px;
+}
+ .navbar-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #D3D3D3;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #228B22; /* Background color for the links */
+ }
+
+ .navbar-links a:hover {
+    background-color: #fff; /* Change background color to white on hover */
+    color: #000; /* Change text color to black on hover */
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+ }
+
+ .fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+            padding: 5px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            /*background-color: #26EA49;
+            border: 2px solid black;*/
+            border-radius: 5px;
+            cursor: pointer;
+            transition: box-shadow 0.3s;
+            background: var(--dark-black); /* Change to orange */
+            color: var(--white); /* Text color black */
+        }
+
+        /* Add hover effect */
+        button:hover {
+            box-shadow: 0 4px 8px rgba(0, 128, 0, 0.6);
+        }
+
+        .link-buttons{
+            display:flex;
+            background: var(--dark-black); /* Change to orange */
+            color: var(--white); /* Text color black */
+        }
+
+        .link-buttons:hover{
+            background: DarkGreen; /* Change hover background to orange */
+            color: white;
+        }
+
+        /* FORM STYLE */
+        #registration-form {
+            margin-top: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid whitesmoke;
+            padding: 15px;
+            background-color:white;
+            float: right;
+            margin-right:200px;
+        }
+
+        .form-group {
+            width: 48%;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 20%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            color: white;
+            background-color: #28a745;
+            border-radius: 5px;
+            transition: box-shadow 0.3s;
+            border-color: #28a745;
+            
+        }
+
+        input[type="submit"]:hover {
+            box-shadow: 0 4px 8px rgba(0, 128, 0, 0.6);
+            background: #114d1e; /* Change hover background to orange */
+            color: white;
+            border-color: #218838;
+        }
+        .form-group.submit-button {
+            text-align: center;
+            width: 100%;
+        }
+        .overview-flex__img{
+            float: left;
+            margin-left: 150px;
+            margin-top: 150px;
+        }
+
+       
+      
+
+      

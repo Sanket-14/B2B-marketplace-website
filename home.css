@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("B2B_bg.jpg");
+    background-size: cover;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333; /* Updated background color for the navbar */
+    color: white; /* Updated text color for the navbar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from the brand */
+    color: #fff; /* Adjust color for the brand */
+}
+
+.navbar-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #007bff; /* Background color for the links */
+}
+
+.navbar-links a:hover {
+    background-color: #0056b3; /* Color change on hover */
+    text-decoration: none;
+}
+
+.add-listing {
+    background-color: #28a745; /* Background color for the "Add Listing" link */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.add-listing:hover {
+    background-color: #218838; /* Color change on hover */
+    text-decoration: none;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.form-control {
+    width: 500px; /* Increased width for the search bar */
+    height: 40px;
+    padding: 0 15px;
+    margin-right: 10px;
+    border: 2px solid #007bff; /* Updated border color */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth transition on focus */
+}
+
+.form-control:focus {
+    border-color: #0056b3; /* Focus color */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus shadow */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

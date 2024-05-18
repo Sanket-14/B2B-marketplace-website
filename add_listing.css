@@ -1,0 +1,123 @@
+/* styles.css */
+/* body { */
+    /* font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color:whitesmoke;
+    background-size: cover;
+    color: #333; */
+
+    /* background-color: blue; */
+    /* background-colo */
+    /* background-image: url("B2B_bg.jpg"); */
+/* } */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #2F4F4F;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* align-items: ; */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    margin-right: auto;
+}
+
+.navbar-links a  {
+margin-right: 20px;
+text-decoration: none;
+color: #fff;
+padding: 8px 15px;
+border-radius: 5px;
+background-color: #228B22; /* Background color for the links */
+}
+
+.navbar-links a:hover  {
+background-color: #fff; /* Change background color to white on hover */
+color: #000; /* Change text color to black on hover */
+text-decoration: none;
+box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+}
+
+
+body {
+    /* background-color: #f8f9fa; */
+    /* background-image: url("add_listing_bg.png"); */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 850px;
+    margin: 50px auto;
+    /* margin: 50px 0;
+    padding: 0 35px; */
+}
+
+.add-listing-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    color: #1853b9;
+    /* font-weight: bold; */
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-size: 13px;
+    /* font-weight: bold; */
+}
+
+.btn-primary:hover {
+    background-color: #114d1e;
+    border-color: #218838;
+}
+
+
+.info-icon {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px; 
+}
+
+.info-icon:hover .info-tooltip {
+    display: block;
+}
+
+.info-tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 335px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}

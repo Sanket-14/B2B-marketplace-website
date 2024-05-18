@@ -1,0 +1,249 @@
+/*=============== GOOGLE FONTS ===============*/
+
+/* navbar styling ends here with responsiveness */
+
+.profile-circle {
+  display: flex;
+  align-items: center;
+  /* width: auto; */
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    background-color: #23d375;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px; 
+    border: 2px solid green;
+
+}
+
+
+body {
+    background-color: whitesmoke;
+    padding-top: 100px;
+}
+
+.main-div{
+    display:flex;
+    flex-direction:row;
+}
+
+.left-div,
+.right-div {
+    /* border: 1px solid black; Black thin border */
+    padding:20px;
+    border-radius:2px;
+}
+
+
+.left-div {
+    width: 25%;
+    margin-left: 20px; /* Adjust margin as needed */
+    background-color: white;
+    float: left;
+}
+
+.right-div {
+    width: 75%;
+    margin-left: 20px; 
+    background-color: white;
+    float: left;
+}
+
+.inner-left-div,
+.inner-right-div {
+    border: 1px solid black; 
+    border-radius:5px;
+    padding:20px;
+}
+
+.green-button {
+    background-color: #198754;
+    /* Green color */
+    color: white;
+    /* White text color */
+    padding: 10px 20px;
+    /* Padding for the button */
+    border: none;
+    /* Remove default button border */
+    border-radius: 5px;
+    /* Add some border radius for rounded corners */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    width: 100%;
+}
+
+.green-button:hover {
+    background-color: #0d6e3c;
+    /* Darker green color on hover */
+}
+
+/* heart */
+
+.heart-toggle {
+    position: relative;
+    cursor: pointer;
+}
+
+.heart-icon {
+    width: 32px;
+    height: 32px;
+    fill: none;
+    /* Initially transparent */
+    transition: fill 0.2s ease;
+    /* Smooth transition on fill change */
+}
+
+.heart-outline {
+    stroke: black;
+    /* Color of the heart outline */
+    stroke-width: 2px;
+    /* Width of the heart outline */
+}
+
+/* heart ends */
+
+/* Card of products */
+.card {
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in width and height */
+    margin:30px;
+}
+
+.card h2 {
+    margin-top: 10; /* Remove default margin for the heading */
+}
+
+.card p {
+    margin-top: 10px; /* Add some space below the heading */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-wrapper {
+    width: calc(33.33% - 20px); /* Adjust width based on 3 images per row */
+    margin: 10px; /* Adjust margin as needed */
+}
+
+/* graph */
+.legend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-direction: row;
+  margin-top: 0px;
+  align-items: center;
+
+}
+
+.legend-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.products-div{
+  display:flex;flex-direction:row;
+}
+.references-div{
+  display:flex;
+}
+.cust-references,.graph{
+  width:50%;
+}
+/* graph ends */
+
+/* form */
+
+/* form ends */
+@media (max-width:768px){
+  .main-div{
+    display:flex;
+    flex-direction:column;
+  }
+  .left-div{
+    display:flex;
+    flex-direction:column;
+    width: calc(100vw - 20px);
+    margin:auto;
+  }
+  .inner-left-div{
+    display:flex;
+    flex-direction:column;
+    width: calc(100vw - 60px);
+  }
+  .right-div{
+    width: calc(100vw - 20px);
+    margin:auto;
+
+  }
+  .inner-right-div{
+    width: calc(100vw - 60px);
+  }
+  .first-section{
+    display:flex;
+    flex-direction:column;
+    margin-left:20px;
+    margin-right:20px;
+
+    justify-content: center; /* horizontally center items */
+  /* align-items: center;  */
+  }
+  .company-video {
+    height:100px;
+  }
+  .products-div{
+    display:flex;flex-direction:column;
+  }
+
+  .card {
+    width: calc(100vw - 160px);
+    height: auto;
+  }
+ .comp-images{
+  width:60%;
+  height:60%;
+ }
+ .references-div{
+  display:flex;
+  flex-direction:column;
+}
+.cust-references,.graph{
+  width:100%;
+}
+.products-image{
+    height:auto;
+    width: calc(100vw - 200px);
+}
+.ref-name{
+  font-size:1rem;
+}
+.ref-categories{
+    font-size:0.8rem;
+}
+}

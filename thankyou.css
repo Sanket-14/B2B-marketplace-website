@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background: #a9efc8; */
+    background-image: url(./images/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: overlay;
+    background-position: fixed;
+    
+}
+
+/*------------ Login container ------------*/
+
+.box-area{
+    width: 35rem;
+    /* padding-bottom: 2rem; */
+}
+
+.mybox{
+    
+    text-align: center;
+    justify-content: center;
+  
+}
+
+.button{
+    margin-bottom: 1rem;
+    width: 20rem;
+    
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: auto; /* Center horizontally within its container */
+    
+}
+
+
+/*------------ Custom Placeholder ------------*/
+
+::placeholder{
+    font-size: 16px;
+}
+
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    color: #000;
+}
+
+.navbar-brand:hover {
+    color: #000; /* Change hover color as needed */
+    text-decoration: none;
+}
+
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+     .box-area{
+        margin: 0 10px;
+
+     }
+     .left-box{
+        height: 100px;
+        overflow: overlay;
+     }
+     .right-box{
+        padding: 20px;
+     }
+
+}

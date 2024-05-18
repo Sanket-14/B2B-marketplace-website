@@ -1,0 +1,439 @@
+body{
+            background-color: white;
+        }
+        .card-img-top {
+        width: 100%;
+        height: 300px; 
+        object-fit: cover; Ensures images retain their aspect ratio
+        
+        }
+        
+        .carousel-inner .row {
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-between; */
+            margin: -15px; /* Compensate for default column gutters */
+        }
+        .carousel-inner .col-md-4 {
+            flex: 0 0 calc(33.33% - 30px); /* Set width for three images in a row with 15px margin */
+            margin: 10px; /* Create spacing between images */
+            /* height:100vh; */
+
+        }          
+        
+        
+         body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+     /* background-image: url("B2B_bg.jpg");  */
+     background-size: cover ;
+    background-color:white;
+    background-size: cover; */
+    color: #333;
+    /* max-width:3000px; */
+ }
+
+ .navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /* padding: 11px; */
+    background-color: white; /* Updated background color for the navbar */
+    color: white; /* Updated text color for the navbar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   /* position: fixed; */
+    top: 0;
+    width: 100%; /* Set the width to 100% */
+    height: 75px;
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
+ }
+ .white-text{
+    position: absolute;
+    left: 60px;
+    top: 25px;
+    align-items:center;
+ }
+ .green-text{
+    position: absolute;
+    left: 105px;
+    top:25px;
+    align-items:center;
+ }
+
+ .navlogo-white{
+    margin-top: 0px;
+    margin-left:19px;
+    align-items:center;
+    height:2.1rem;
+    width:1.3rem;
+}
+
+
+ .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from the brand */
+    color: #141E12; /* Adjust color for the brand */
+ }
+ .navbar-links {
+    display: flex; /* Ensure the navbar links are displayed side by side */
+    margin-right: 20px;
+}
+
+
+ .navbar-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight:bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #23D375FF; /* Background color for the links */
+ }
+
+ .navbar-links a:hover {
+    background-color: #fff; /* Change background color to white on hover */
+    color: #23D375FF; /* Change text color to black on hover */
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+ }
+
+ .fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+  
+                /* Style for the extended search bar */
+                .right-side form {
+            display: flex;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .right-side input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .right-side button {
+            padding: 10px 20px;
+            background-color: grey;
+            color: #fff;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .right-side button:hover {
+            background-color: #000;
+        }
+        /* Navbar styles */
+
+
+
+        /* Split container layout */
+        .split-container {
+            display: flex;
+            height: auto;
+        }
+
+        .left-side {
+            width: 25%;
+            background-color: white;
+            padding: 20px;
+          /*  border: 1px solid rgba(0, 0, 0, 0.2); You can change the color  code as needed */
+            border-radius: 10px;
+            /* margin-top: 100px; */
+            height: auto;
+        }
+
+        .right-side {
+            width: 75%;
+            background-color: white;
+            padding: 20px;
+            /* margin-top: 100px; */
+            height:auto;
+            margin-top: 1px;
+        }
+
+
+        .card {
+            margin-top: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* You can change the color code as needed */
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px; /* Adjust the width as needed */
+    height: 450px; /* Adjust the height as needed */
+    /* Optionally, you can add overflow and box-sizing properties to control content overflow */
+    overflow: hidden;
+    box-sizing: border-box;
+        }
+        .icon {
+  vertical-align: middle; /* Align the icon vertically */
+}
+
+.text {
+  line-height: 1.5; /* Adjust the line height as needed to vertically align with the icon */
+  margin-left: 5px; /* Add some space between the icon and the text */
+}
+.explore-link {
+    color: #007bff; /* Set the link color to blue */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+}
+
+.explore-link:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+
+.card:hover {
+    background-color:  #d4f4dd; /* Light green background on hover */
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+
+
+
+
+
+
+.icon {
+    margin-right: 5px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* .material-icons{
+    color:green;
+} */
+
+/* pagination styles */
+.pagination ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .pagination ul li {
+        margin: 0 5px;
+    }
+    .pagination ul li a {
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    .pagination ul li a:hover {
+        background-color: #f0f0f0;
+    }
+    .pagination ul li.active a {
+        background-color: #006400;
+        color: white;
+    }
+
+    #categorytags {
+    display: flex;
+    flex-direction:row;
+}
+
+.tag {
+    background-color: #e0e0e0;
+    margin: 5px;
+    padding: 5px;
+    border-color: #8ee9dd;
+    border-style: solid; /* Specify the border style */
+    border-radius: 50px; /* Adjust border-radius to your preference */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.tag .tag-text {
+    margin-right: 5px;
+}
+h2 {
+    margin-top: 0px;
+}
+
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+html,
+body {
+  background-color: #fff;
+}
+.form-popup-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.form-popup-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 110, 141, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  overflow-y: auto;
+  z-index: 10000;
+}
+.form-popup-bg.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.form-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 40px;
+  color: black;
+}
+.close-button {
+  background-color: #198754;
+  color: #198754;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: solid 1px #fff;
+}
+.form-popup-bg:before {
+  content: '';
+  background-color: #fff;
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* .popup{
+    display: flex;
+    flex-direction: column;
+} */
+.popup input,
+.popup textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right:10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e7e9ed !important;
+    resize: vertical;
+}
+
+.popup button[type="submit"] {
+    background-color: #198754;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.right-side form {
+    /* display: flex; */
+    width: 100%!important;
+    margin-top: 40px;
+}
+textarea::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    </style>
+
+<style>
+
+.heart-toggle {
+    position: relative;
+    cursor: pointer;
+}
+
+.heart-icon {
+    width: 32px;
+    height: 32px;
+    fill: none; /* Initially transparent */
+    transition: fill 0.2s ease; /* Smooth transition on fill change */
+}
+.heart-outline {
+    stroke: black; /* Color of the heart outline */
+    stroke-width: 2px; /* Width of the heart outline */
+}
+
+.green-button {
+    background-color: #198754; /* Green color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add some border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width:100%;
+}
+
+.green-button:hover {
+    background-color: #0d6e3c; /* Darker green color on hover */
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+

@@ -1,0 +1,97 @@
+   
+<?php
+
+
+// Handling form submission
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Collect form data
+    $comp_name = $_POST['companyName'];
+    $Region = $_POST['companyRegion'];
+    $Country = $_POST['countryRegistration'];
+    $city = $_POST['city'];
+    $contactno = $_POST['contactno'];
+    $Company_Overview = $_POST['companyOverview'];
+
+    $Categories = $_POST['businessCategories']; // Assuming an array is submitted -- to be done
+
+
+    // $Supplier_type = $_POST['supplierType']; // Assuming an array is submitted (old)
+    $Supplier_type = isset($_POST['supplierType']) ? $_POST['supplierType'] : array(); // (new works properly)Assuming an array is submitted
+    // Implode the array of selected values into a comma-separated string
+    $Supplier_type_str = implode(', ', $Supplier_type);
+
+    // $PV_capacity = $_POST['productionVolume']; // Assuming an array is submitted (old stores array directly)
+    $PV_capacity = isset($_POST['productionVolume']) ? $_POST['productionVolume'] : array(); // Assuming an array is submitted
+    // Implode the array of selected production volumes into a comma-separated string       
+    $PV_capacity_str = implode(', ', $PV_capacity);
+
+
+    // $Categories = implode(", ", $_POST['businessCategories']); // Convert array to string
+    // $Supplier_type = implode(", ", $_POST['supplierType']); // Convert array to string
+    // $PV_capacity = implode(", ", $_POST['productionVolume']); // Convert array to string
+
+    $Year_Founded = $_POST['yearFounded'];
+    $Company_Size = $_POST['companySize'];
+    $Company_Certificates = $_POST['companyCertificates'];
+    $Website = $_POST['companyWebsite'];
+
+    // Handling the image upload (if file exists)
+    if (isset($_FILES['logo'])) {
+        $img_name = $_FILES['logo']['name'];
+      $img_size = $_FILES['logo']['size'];
+      $tmp_name = $_FILES['logo']['tmp_name'];
+      $error = $_FILES['logo']['error'];
+
+        if ($error === 0) {
+            if ($img_size > 125000) {
+                $em = "Sorry, your file is too large.";
+                header("Location: add_listing.php?error=$em");
+            }else {
+                $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
+                $img_ex_lc = strtolower($img_ex);
+    
+                $allowed_exs = array("jpg", "jpeg", "png"); 
+    
+                if (in_array($img_ex_lc, $allowed_exs)) {
+                    $new_img_name = uniqid("IMG-", true).'.'.$img_ex_lc;
+                    $img_upload_path = 'uploads/'.$new_img_name;
+                    move_uploaded_file($tmp_name, $img_upload_path);
+    
+                    // Insert into Database
+                    // $sql = "INSERT INTO images(image_url) 
+                    //         VALUES('$new_img_name')";
+                    // mysqli_query($conn, $sql);
+                    // header("Location: view.php");
+                    $logo=$new_img_name;
+                }else {
+                    $em = "You can't upload files of this type";
+                    header("Location: add_listing.php?error=$em");
+                }
+            }
+        }else {
+            $em = "unknown error occurred!";
+            header("Location: add_listing.php?error=$em");
+        }
+
+
+    } else {
+        $logo = NULL;
+    }
+
+    // SQL query to insert into the Add_listing table
+    $sql = "INSERT INTO Add_listing (comp_name, Region, Country, city, Contact_Number, Company_Overview, Categories, Supplier_type, PV_capacity, Year_Founded, Company_Size, Company_Certificates, Website, image_url)
+    VALUES ('$comp_name', '$Region', '$Country', '$city','$contactno', '$Company_Overview', '$Categories','$Supplier_type_str', '$PV_capacity_str', '$Year_Founded', '$Company_Size', '$Company_Certificates', '$Website', '$logo')";
+
+    // Executing the query
+    if ($conn->query($sql) === TRUE) {
+        // echo "New record inserted successfully;"
+        // Redirect to thankyou.php
+        echo '<script type="text/javascript">window.location.href = "thankyou.php";</script>';
+        exit(); // Ensure that no further code is executed after the redirect
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+// Closing the connection
+?>

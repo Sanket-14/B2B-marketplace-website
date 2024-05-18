@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background: #a9efc8; */
+    background-image: url("./images/background5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: overlay;
+    
+}
+
+
+.main-container{
+    padding-top: 10rem;
+}
+/*------------ Login container ------------*/
+
+.box-area{
+    width: 930px;
+}
+
+/*------------ Right box ------------*/
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+/*------------ Custom Placeholder ------------*/
+
+::placeholder{
+    font-size: 16px;
+}
+
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+    /* Ensure image is responsive */
+    .featured-image {
+        width: 100%;
+        height: auto;
+        text-align: center; /* Center the image horizontally */
+    }
+
+    .featured-image img {
+        max-width: 100%; /* Ensure image doesn't exceed its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+
+
+/* old navbar srtyling- commenting out bcoz new navbar included */
+/* .navbar {
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    color: #000;
+}
+
+.navbar-brand:hover {
+    color: #000; 
+    text-decoration: none;
+} */
+
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+     .box-area{
+        margin: 4rem;
+        width: 95%; /* Adjust width for smaller screens */
+        max-width: 380px; /* Set a maximum width */
+        margin: 2rem auto; /* Center the box */
+
+     }
+ 
+     .right-box{
+        padding: 20px;
+     }
+
+ 
+    /* Ensure image is responsive */
+    .featured-image {
+        /* width: 100%; */
+        /* height: auto; */
+        text-align: center; /* Center the image horizontally */
+    }
+
+    .featured-image img {
+       height: 13.5rem;
+       width: 14rem;
+      
+    }
+
+   
+}
+

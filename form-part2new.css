@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background: #a9efc8; */
+    background-image: url(./images/background4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+.form-group{
+    margin-bottom: 8rem;
+}
+
+input.form-control.bg-light {
+    background-color: #e7e9ed !important;
+}
+
+input.form-control.bg-light.compname {
+    background-color: #ffffff !important;
+}
+
+
+
+/*------------ Login container ------------*/
+
+.box-area{
+    width: 700px;
+}
+
+/*------------ Right box ------------*/
+
+.right-box{
+    padding: 40px 0px 40px 40px;
+}
+
+/*------------ Custom Placeholder ------------*/
+
+::placeholder{
+    font-size: 16px;
+}
+
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    color: #000;
+}
+
+.navbar-brand:hover {
+    color: #000; /* Change hover color as needed */
+    text-decoration: none;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+/* left container stepwise margin */
+.box{
+    margin-top: 7rem;
+}
+
+/* .box-area{
+    margin-top
+} */
+
+
+
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+     .box-area{
+        margin: 0 10px;
+        height: auto;
+        width: auto;
+
+     }
+
+     .box{
+        height: auto;
+        width: auto;
+
+     }
+     .left-box{
+        height: auto;
+        overflow: overlay;
+     }
+     .right-box{
+        padding: 20px;
+     }
+
+     body{
+        overflow: overlay;
+     }
+
+    
+}
+
+
+/* Mobile screens (up to 576px) */
+@media (max-width: 576px) {
+    /* Styles for screens up to 576px wide (e.g., smartphones) */
+    /* Adjust as needed */
+  }
+  
+  /* Tablet screens (577px to 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    /* Styles for screens between 577px and 768px wide (e.g., tablets) */
+    /* Adjust as needed */
+  }
+
+
+
+/* Laptop screens (769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    /* Styles for screens between 769px and 992px wide (e.g., laptops) */
+    /* Adjust as needed */
+    body{
+        overflow: overlay;
+    }
+  }
+  
+  /* Desktop screens (993px and wider) */
+  @media (min-width: 993px) {
+    /* Styles for screens 993px and wider (e.g., desktops) */
+    /* Adjust as needed */
+    body{
+        overflow: overlay;
+    }
+  }
